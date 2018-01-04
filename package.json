@@ -1,0 +1,22 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "自述文件：\r \t项目：天天新鲜",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aowuxka/my_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aowuxka/my_project/issues"
+  },
+  "homepage": "https://github.com/aowuxka/my_project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
