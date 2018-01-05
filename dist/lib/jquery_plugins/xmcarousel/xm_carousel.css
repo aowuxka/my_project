@@ -1,0 +1,56 @@
+.xm_carousel {
+	position: relative;
+}
+
+.xm_carousel .imgs {
+	position: relative;
+	list-style: none;
+}
+
+.xm_carousel .imgs li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.xm_carousel .imgs li img {
+	border:0px;
+}
+
+.xm_carousel .pages {
+	width:100%;
+	position: absolute;
+	bottom: 0;
+	background: #000;
+}
+
+.xm_carousel .pages i {
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	margin:5px;
+	border-radius: 10px;
+	background: #fff;
+}
+.xm_carousel .pages i.current {
+	background: #f00;
+}
+
+.xm_carousel .prev, .xm_carousel .next {
+	width: 45px;
+	height: 100px;
+	background: #000;
+	line-height: 100px;
+	text-align: center;
+	color:#fff;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	margin: auto;
+}
+
+.xm_carousel .next {
+	right:0;
+}

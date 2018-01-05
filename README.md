@@ -38,3 +38,12 @@
 				src/html/include --- 头尾资源复用
 				
 		dist --- gulp压缩后的资源
+		
+	任务笔记：
+		淘宝搜索提示：
+			https://suggest.taobao.com/sug?code=utf-8&q="+ $(this).val() +"&callback=?
+		
+		json文件不能有注释！！！！
+		
+		Git Bash Here 启动 gulp ctrl+c会中断服务器就连接不上
+	

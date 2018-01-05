@@ -13,20 +13,20 @@ require.config({
 		//抛物线插件
 		"fly" : "lib/jquery_plugins/jquery.fly",
 		//模板引擎
-		"template" : "lib/arttemplate/template"
+		"template" : "lib/arttemplate/template",
 		//复用的头尾部代码js
-		"load" : "js/loadHeaderFooter"
+		"load" : "js/loadHeaderFoot"
 	},
 	//配置垫片
 	shim : {
 		"zoom" : {
-			deps : ["jquery"]
+			deps : ["jquery"],
 		},
 		"fly" : {
-			deps : ["jquery"]
+			deps : ["jquery"],
 		},
 		"teplate" : {
-			deps : ["jquery"]
+			deps : ["jquery"],
 		}
 
 	}
