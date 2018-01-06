@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>天天新鲜首页</title>
+		<link rel="stylesheet" href="css/index.css">
 		<!--data-main="js/index"：找到index.js里的模块 -->
 		<script src="lib/require.js" data-main="js/index"></script>
 	</head>
@@ -10,10 +11,89 @@
 		<!--头部-->
 		<div class="header"></div>
 		
-		<!--主体-->
-		<div class="main">
+		<!-- 图片轮播 -->
+		<div class="center_con2">
 			
+			<ul class="sub_menu fl">
+				<li><a href="">新鲜水果</a></li>
+				<li><a href="" class="icon02">新鲜水果</a></li>
+				<li><a href="" class="icon03">新鲜水果</a></li>
+				<li><a href="" class="icon04">新鲜水果</a></li>
+				<li><a href="" class="icon05">新鲜水果</a></li>
+				<li><a href="" class="icon06">新鲜水果</a></li>
+			</ul>
+	
+			<!-- 轮播图部分  四张图片 -->
+			<div class="slide fl">
+				
+				<ul class="slide_list">
+					<li><img src="images/slide.jpg" alt="专题图片" /></li>
+					<li><img src="images/slide02.jpg" alt="专题图片" /></li>
+					<li><img src="images/slide03.jpg" alt="专题图片" /></li>
+					<li><img src="images/slide04.jpg" alt="专题图片" /></li>
+				</ul>
+				<!-- 左右按钮 -->
+				<div class="prev"></div>
+				<div class="next"></div>
+				<!-- 下面小圆点 -->
+				<ul class="points">
+					<!-- 这里注释掉是因为图片的个数不确定 所以需要动态添加 -->
+					<!-- <li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li> -->
+				</ul>
+			</div>
+			<div class="adv fr">
+				<a href="#"><img src="images/adv01.jpg" alt="广告图片"></a>
+				<a href="#"><img src="images/adv02.jpg" alt="广告图片"></a>
+			</div>
 		</div>
+		<!--海鲜水产-->
+		<div class="common_model">
+		
+		<div class="common_title">
+			<h3>新鲜水果</h3>
+			<ul>
+				<li><span>|</span></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+			</ul>
+			<a href="#" class="more fr">查看更多 &gt;</a>
+		</div>
+
+
+		<div class="common_goods_con">
+			<div class="common_banner fl">
+				<a href="#"><img src="images/banner01.jpg" alt="商品banner"></a>
+			</div>
+
+			<ul class="common_goods_list fl">
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
 		
 		<!--尾部-->
 		<div class="footer"></div>

@@ -1,0 +1,298 @@
+/*  去掉标签默认的间距   */
+body,ul,ol,p,h1,h2,h3,h4,h4,h6,dl,dd,select,input,form{
+    margin:0;
+    padding:0;
+}
+/*  去掉小圆点以及数字   */
+ul,ol{
+    list-style:none;
+}
+/* 去掉下划线 */
+a{text-decoration:none;}
+
+/* 去掉斜体 */
+em{
+    font-style:normal;
+}
+/* 让h标签继承body的文字设置 */
+h1,h2,h3,h4,h4,h6{
+    font-size:100%;
+    font-weight:normal;
+}
+/* 在IE下去掉图片做链接时生成的框线 */
+img{
+    border:0px;
+}
+
+/* 清除浮动以及清除margin-top塌陷 */
+
+.clearfix:before,.clearfix:after{
+    content:'';
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+
+
+.fl{
+    float:left;
+}
+
+.fr{
+    float:right;
+}
+
+body{
+    font-family:'微软雅黑';
+    font-size:12px;
+}
+
+    /*页面顶部*/
+.header_con{
+    height:29px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    .header{
+        width:1200px;
+        height:29px;
+        margin:0 auto;
+        .welcome,.user_login_btn,.user_info,.user_link{
+            height:29px;
+            line-height:29px;
+            color:#666;
+        }        
+        .user_login_btn a,.user_link a{
+            color:#666;
+        }
+        .user_login_btn a:hover,.user_link a:hover{
+            color:#ff8800;
+        }
+        .user_login_btn span,.user_link span{
+            color:#cecece;
+            padding:0 12px;
+        }
+        .user_info{
+            display:none;
+        }
+        .user_info em{
+            color:#ff8800;
+        }
+        
+    }
+}
+.center_con{
+    width:1200px;
+    height:115px;
+    margin:0 auto;
+    
+    .logo img{
+        margin-top:29px;
+        width:151px;
+        height:59px;
+        margin-left:17px;
+    }
+
+        
+        .input_txt{
+            width:480px;
+            height:38px;
+            border:1px solid #37ab40;
+            margin-left:36px;
+            margin-top:29px;
+            margin:34px 0 0 124px;
+            padding-left: 33px;
+            background:url(../images/icons.png) 10px 10px no-repeat;
+        }
+        .input_sub{
+            width:100px;
+            height:40px;
+            background-color:#37ab40;
+            /* 去掉设置尺寸后产生的边框 */
+            border:0px;
+            font-size:14px;
+            color:#fff;
+            margin-top:34px;
+            /*  设置鼠标悬停时鼠标指针的形状为手型  */
+            cursor:pointer;
+        }
+    }
+    .chart_con{
+        width:200px;
+        height:40px;
+        margin-top:34px;
+            a{
+                width:158px;
+                height:38px;
+                border:1px solid #ddd;
+                line-height:38px;
+                text-indent:56px;
+                font-size:14px;
+                color:#37ab40;
+                background:url("/images/icons.png") 12px -42px no-repeat #f7f7f7;  
+            }
+}
+.main_menu_con{
+    height:40px;
+    border-bottom:2px solid #37ab40;
+    .main_menu{
+        width:1200px;
+        height:40px;
+        margin:0 auto;
+            h2{
+                width:200px;
+                height:40px;
+                background-color:#37ab40;
+                font:normal 14px/40px 'Microsoft Yahei';
+                color:#fff;
+                text-align:center;   
+            }
+            ul{
+                overflow: hidden;
+                li{
+                    float:left;
+                    height:40px;
+                    line-height:40px;
+                    text-align:center;
+                 
+                    a{
+                        padding:0 22px;
+                        border-left:1px solid #ddd;
+                        font-size:14px;
+                        color:#666;
+                        margin-left:-1px;
+                    }
+                    &:hover{
+                        a{
+                            color:#ff8800;;
+                        }
+                    }
+                }
+           }
+    }
+}
+
+/*轮播*/
+.center_con2{
+    width:1200px;
+    height:270px;
+    margin:0 auto;
+    
+    
+    .sub_menu{
+        width:200px;
+        height:270px;
+        
+        li{
+            width:198px;
+            height:44px;
+            border:1px solid #eee;
+            border-top:0px;
+            background:url(../images/icons.png) 177px -385px no-repeat;
+            a{
+                display:block;
+                height:44px;
+                line-height:44px;
+                font-size:14px;
+                color:#333;
+                text-indent:71px;
+                background:url(../images/icons.png) 32px -90px no-repeat;
+            
+            }
+            .icon02{
+                background-position:30px -140px;
+            }
+            .icon03{
+                background-position:32px -190px;
+            }
+            .icon04{
+                background-position:34px -240px;
+            }
+            .icon05{
+                background-position:32px -290px;
+            }
+            .icon06{
+                background-position:32px -340px;
+            }
+
+        }
+        
+    }
+    .slide{
+        width:760px;
+        height:270px;
+        background-color:gold;
+        position:relative;
+        overflow: hidden;
+        .slide_list{
+            position:absolute;
+            left:0;
+            top:0;
+            width:760px;
+            height:270px;
+            li img{
+                width:760px;
+                height:270px;
+                position:absolute;
+                left:0;
+                top:0;
+            }
+        }
+    }
+    .prev{
+        position:absolute;
+        left: 237px;
+        top: 309px;
+        width:15px;
+        height:23px;
+        background:url(../images/icons.png) -1px -450px no-repeat;
+        cursor:pointer;
+    }
+    .next{
+        position:absolute;
+        right:277px;
+        top:309px;
+        width:15px;
+        height:23px;
+        background:url(../images/icons.png) -1px -500px no-repeat;
+        cursor:pointer;
+    }
+    .points{
+        position:absolute;
+        left:0;
+        bottom:85px;
+        width:100%;
+        height:11px;
+        font-size:0;
+        text-align:center;
+        li{
+            display:inline-block;
+            width:11px;
+            height:11px;
+            background-color:#9f9f9f;
+            margin:0 5px;
+            border-radius:50%;
+            cursor:pointer;
+        }
+        .adv{
+            background-color:red;
+        }
+    }
+    .adv{
+        background-color:red;
+        img{
+            display:block;
+        }
+    }
+    
+}
+
+.common_model{
+    width:1200px;
+    height:335px;
+    margin:21px auto 0;
+    
+}
