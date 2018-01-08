@@ -15,19 +15,23 @@ require.config({
 		//模板引擎
 		"template" : "lib/arttemplate/template",
 		//复用的头尾部代码js
-		"load" : "js/loadHeaderFoot"
+		"load" : "js/loadHeaderFoot",
+		//轮播图插件
+		"carousel":"lib/jquery_plugins/xmcarousel/jquery.xmcarousel"
 	},
 	//配置垫片
 	shim : {
 		"zoom" : {
-			deps : ["jquery"],
+			deps : ["jquery"]
 		},
 		"fly" : {
-			deps : ["jquery"],
+			deps : ["jquery"]
 		},
 		"teplate" : {
-			deps : ["jquery"],
+			deps : ["jquery"]
+		},
+		"carousel":{
+			deps : ["jquery"]
 		}
-
 	}
 });

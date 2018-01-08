@@ -8,7 +8,11 @@ require(["config"],function(){
 			var renderData = {products : data.res_body.data};
 			//渲染数据
 			var html = template("list_template",renderData);
-			$(".main").html(html);
+			$(".buy").html(html);
+			//add
+			$(".add").on("click",function(){
+				console.log(this)
+			});
 		});
 	});
 });

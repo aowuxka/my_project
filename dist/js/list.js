@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","template","load"],function(t,e){t.getJSON("/mock/list.json",function(i){var n={products:i.res_body.data},o=e("list_template",n);t(".main").html(o)})})});
+"use strict";require(["config"],function(){require(["jquery","template","load"],function(t,o){t.getJSON("/mock/list.json",function(e){var i={products:e.res_body.data},n=o("list_template",i);t(".buy").html(n),t(".add").on("click",function(){console.log(this)})})})});

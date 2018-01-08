@@ -1,56 +1,39 @@
-.xm_carousel {
+.xm_carousel_container {
 	position: relative;
 }
 
-.xm_carousel .imgs {
-	position: relative;
+.xm_carousel_container .imgs {
 	list-style: none;
 }
-
-.xm_carousel .imgs li {
+.xm_carousel_container .pages {
+	height: 30px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	overflow: hidden;
+	bottom:0;
 }
-
-.xm_carousel .imgs li img {
-	border:0px;
-}
-
-.xm_carousel .pages {
-	width:100%;
-	position: absolute;
-	bottom: 0;
-	background: #000;
-}
-
-.xm_carousel .pages i {
+.xm_carousel_container .pages i {
+	width:10px;
+	height: 10px;
+	border-radius: 5px;
+	background:white;
 	display: inline-block;
-	width:20px;
-	height: 20px;
 	margin:5px;
-	border-radius: 10px;
-	background: #fff;
 }
-.xm_carousel .pages i.current {
+.xm_carousel_container .pages i.current {
 	background: #f00;
 }
 
-.xm_carousel .prev, .xm_carousel .next {
-	width: 45px;
+.xm_carousel_container .prev, .next {
+	width:45px;
 	height: 100px;
-	background: #000;
-	line-height: 100px;
-	text-align: center;
 	color:#fff;
+	text-align: center;
+	line-height: 100px;
 	position: absolute;
 	top:0;
 	bottom: 0;
-	margin: auto;
+	margin:auto;
+	font-size: 20px;
 }
-
-.xm_carousel .next {
+.xm_carousel_container .next {
 	right:0;
 }
