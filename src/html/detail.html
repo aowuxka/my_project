@@ -4,11 +4,84 @@
 		<meta charset="UTF-8">
 		<title>商品详情</title>
 		<link rel="stylesheet" href="/css/base.css" />
+		<link rel="stylesheet" href="/css/detail.css" />
 		<script src="../lib/require.js" data-main="/js/detail"></script>
 	</head>
 	<body>
 		<div class="header"></div>
-		<div class="main">商品详情</div>
+		
+		<div class="main_menu_con">		
+		<div class="main_menu">
+			<h2 class="fl">商品详情</h2>
+			<ul class="fl">
+				<li><a href="">首页</a></li>
+				<li><a href="/html/list.html">商品列表</a></li>
+				<li><a href="">抽奖</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="main">
+			<div class="fdj">
+				<div class="lf">
+					<img src="/images/goods_pic.jpg">
+					<div class="hny"></div>
+				</div>
+				<div class="big"><img src="/images/goods_pic.jpg" class="da"></div>
+				<div class="rgt">
+					<p class="p1">壹芙法甜（Van Evelyne）巧克力草莓12粒（口<br/>味随机发货）</p>
+					<p class="p2">采用顶级原料烘焙，层次感分明，外酥内软，邂逅美好时刻！</p>
+					<div class="price">￥129.00 <span><del>￥239.00</del></span></div>
+					<div class="yh">您已享受优惠</div>
+					<!-- <div class="kh"><div class="sl">数量：</div><div class="ji">-</div><div class="amount">1</div><div class="jia">+</div></div>
+					<div class="add_to_cart">加入购物车</div> -->
+				</div>
+			</div>
+		</div>
+		
 		<div class="footer"></div>
+			<script src="/js/tools.js"></script>
+		<script type="text/javascript">
+			var middle=$(".lf")[0],
+				len=$(".hny")[0],
+				big=$(".big")[0],
+				da=$(".da")[0];
+			
+			
+			middle.onmouseenter=function(){
+				show(len);
+				show(big);
+			}
+			middle.onmouseleave=function(){
+				hide(len);
+				hide(big);
+			}
+			middle.onmousemove=function(e){
+				e=e||event;
+				offset(len,{
+					top:page(e).y-100,
+					left:page(e).x-100
+				});
+				var _top=len.offsetTop,
+					_left=len.offsetLeft;
+					
+				if(_top<0)
+					_top=0;
+				else if(_top>200)
+					_top=200;
+				if(_left<0)
+					_left=0;
+				else if(_left>200)
+					_left=200;
+				css(len,{
+					top:_top+"px",
+					left:_left+"px"
+				});
+				
+				css(da,{
+					top:-(_top*2)+"px",
+					left:-(_left*2)+"px"
+				});
+			}
+		</script>		
 	</body>
 </html>
