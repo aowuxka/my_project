@@ -9,6 +9,14 @@ require(["config"],function(){
 			//渲染数据
 			var html = template("list_template",renderData);
 			$(".buy").html(html);
+			$(".buy").delegate(".images","click",function(event){
+				var _box = $(this).parent();
+				var _id = _box.children(".id").text();
+				$.cookie("id", _id, {expires:7, path:"/"});
+//				console.log(_id);
+				location="/html/detail.html";
+
+			});
 		});
 		
 		$(function(){
